@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SAI ADITYA SANDUPATLA</title>
+    
+ 
+   <!--styles-->
+    <link href="css/style.css" rel="stylesheet">
+    
+   
+    
+    <!--fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    
+    
+  </head>
+  
+  
+  
+  
+  
+  <body>
+    
+    <!--HEADER -->
+    <div class="header">
+      <div class="for-sticky">
+        <!--LOGO-->
+		<a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"  style="max-width:220px; height:120px; float: left;"></a>
+       
+        <!--/.LOGO END-->
+	<body onload="digitized();">
+    <div style="background-color:#F3F3F3;
+        max-width:220px;width:100%;margin:0 auto;padding:20px;float: right;">
+
+        <table class="tabBlock" align="centre" cellspacing="0" cellpadding="0" border="0">
+            <tr><td class="clock" id="dc"></td>  <!-- THE DIGITAL CLOCK. -->
+                <td>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    
+                        <!-- HOUR IN 'AM' AND 'PM'. -->
+                        <tr><td class="clocklg" id="dc_hour"></td></tr>
+
+                        <!-- SHOWING SECONDS. -->
+                        <tr><td class="clocklg" id="dc_second"></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+
+
+
+<script>
+    // OUR FUNCTION WHICH IS EXECUTED ON LOAD OF THE PAGE.
+    function digitized() {
+        var dt = new Date();    // DATE() CONSTRUCTOR FOR CURRENT SYSTEM DATE AND TIME.
+        var hrs = dt.getHours();
+        var min = dt.getMinutes();
+        var sec = dt.getSeconds();
+
+        min = Ticking(min);
+        sec = Ticking(sec);
+
+        document.getElementById('dc').innerHTML = hrs + ":" + min;
+        document.getElementById('dc_second').innerHTML = sec;
+
+        if (hrs > 12) { 
+            document.getElementById('dc_hour').innerHTML = 'PM'; 
+        }
+        else { 
+            document.getElementById('dc_hour').innerHTML = 'AM'; 
+        }
+
+        // CALL THE FUNCTION EVERY 1 SECOND (RECURSION).
+        var time
+        time = setInterval('digitized()', 1000);
+    }
+
+    function Ticking(ticVal) {
+        if (ticVal < 10) {
+            ticVal = "0" + ticVal;
+        }
+        return ticVal;
+    }
+</script>
+
+
+
+
+      </div>
+      <div class="menu-wrap">
+        <nav class="menu">
+          
+        </nav>
+       
+      </div>
+      <!--/.for-sticky-->
+    </div>
+    <!--/.HEADER END-->
+    
+    <!--CONTENT WRAP-->
+    <div class="content-wrap">
+      <!--CONTENT-->
+      <div class="content">
+      
+	  
+	  
+	  
+        <section id="home">
+          <div class="container">
+            <div class="row">
+              <div class="wrap-hero-content">
+                  <div class="hero-content">
+                    <h1>Hello
+					
+					</h1>
+	
+               <br>
+                    <span class="typed"></span>
+                  </div>
+              </div>
+              <div class="mouse-icon margin-20">
+                <div class="scroll"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+
+        <!--ABOUT-->
+        <section id="about">
+          <div class="col-md-6 col-xs-12 no-pad">
+            <div class="bg-about"></div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 white-col">
+            <div class="row">
+              <!--OWL CAROUSEL2-->
+              <div class="owl-carousel2">
+                <div class="col-md-12">
+                  <div class="wrap-about">
+                    <div class="w-content">
+                      <p class="head-about" style="font-size:100%;">
+                        Welcome to my profile!!! I am a coding enthusiast and an amateur web-developer. I believe that anything can be achieved by
+						confidence and determination. So keep going...Set your goals high...never give up!!!
+                      </p>
+                      
+                      <h5 class="name" style="font-size:120%;">
+                        Sai Aditya Sandupatla
+                      </h5>
+                      <img alt="signature" src="images/signature.png" style="height: 100px; width: 120px;">
+                    </div>
+                  </div>
+                </div>
+              <br>
+					<br>
+					<br>
+					<br>
+					<br>
+                <div class="col-md-12 col-sm-12 col-xs-12 white-col">
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+                      <div class="wrap-about">
+					
+	  
+                        <table class="w-content">
+                          <tr>
+                            <td class="title">Name </td>
+                            <td class="break">:</td>
+                            <td> Sai Aditya Sandupatla</td>
+                          </tr>
+                          <tr>
+                            <td class="title">Phone </td>
+                            <td class="break">:</td>
+                            <td> +91-7386747417</td>
+                          </tr>
+                          <tr>
+                            <td class="title">Email </td>
+                            <td class="break">:</td>
+                            <td> ssaditya2116@gmail.com</td>
+                          </tr>
+						  <tr>
+                            <td class="title">D.O.B</td>
+                            <td class="break">:</td>
+                            <td> 9th July,1997</td>
+                          </tr>
+                          <tr>
+                            <td class="title">Address </td>
+                            <td class="break">:</td>
+                            <td> T-107, Hostel Block-4,<br> Visvesvaraya National Institute of Technology, Nagpur</td>
+                          </tr>
+                          <tr>
+                            <td class="title">Github </td>
+                            <td class="break">:</td>
+                            <td> ssadi2116</td>
+                          </tr>
+                          <tr>
+                            <td class="title">Hackerrank </td>
+                            <td class="break">:</td>
+                            <td> ss_adi</td>
+                          </tr>
+                          
+                        </table>
+						
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.OWL CAROUSEL2 END-->
+            </div>
+          </div>
+        </section>
+        <!--/.ABOUT END-->
+
+      
+
+        <!--HOBBIES-->
+		<div class="hobby">
+        <section class="white-bg" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="title-small" style="align: center;">
+				<div class="headstyle">
+                  <span style="font-size: 140%">Hobbies</span>
+				  </div>
+                </h3>
+				
+				<div class="divn">
+                <p class="content-detail" style="font-size:100%; align: center; " >
+				A Man without a hobby is a Man without a passion in his life. Hobbies rejuvenate us. They bring us out of the blue times. Here are a few of my hobbies...
+                </p>
+				</div>
+              </div>
+              <div class="col-md-9 content-right">
+                <div class="row">
+                  <ul class="listing-item">
+                    <li>
+                      <div class="col-md-4 col-sm-4">
+                        <h3 class="icon-use">
+                          c
+                        </h3>
+                        <p class="head-sm">
+                          NUMISMATICS
+                        </p>
+                        <p class="text-grey">
+                          I love collecting coins and notes of various countries. I've been into numismatics for the past 7 years and collected currencies of 50 different countries!!!
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="col-md-4 col-sm-4">
+                        <h3 class="icon-use">
+                          b
+                        </h3>
+                        <p class="head-sm">
+                          ART AND CRAFT
+                        </p>
+                        <p class="text-grey">
+                          I was fond of art and craft since my childhood. Origami has always been my favourite.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="col-md-4 col-sm-4">
+                        <h3 class="icon-use">
+                          d
+                        </h3>
+                        <p class="head-sm">
+                          ALGORITHMS AND PUZZLES
+                        </p>
+                        <p class="text-grey">
+                          Being a coding enthusiast, algorithms excite me a lot. I always try to solve some or the other mindbender. 
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <ul class="listing-item">
+                    <li>
+                      <div class="col-md-4 col-sm-4">
+                        <p class="icon-use">
+                          f
+                        </p>
+                        <p class="head-sm">
+                          MUSIC
+                        </p>
+                        <p class="text-grey">
+                          I love listening to music in my leisure time. There is no specific music that interests me more. I'm just fond of all kinds of music.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="col-md-4 col-sm-4">
+                        <h3 class="icon-use">
+                          m
+                        </h3>
+                        <p class="head-sm">
+                         SCIENCE AND TECHNOLOGY
+                        </p>
+                        <p class="text-grey">
+                          Being a science student, I have always been fascinated by the wonders of nature and the scientific explanations behind them.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="col-md-4 col-sm-4">
+                        <h3 class="icon-use">
+                          p
+                        </h3>
+                        <p class="head-sm">
+                          READING
+                        </p>
+                        <p class="text-grey">
+                          I'm a regular reader and a fiction lover.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+					</div>
+                </div>
+              </div>
+        
+          </div>
+        </section>
+		</div>
+        <!--/.HOBBIES END-->
+
+    
+        <!--SKILLS-->
+        <section class="white-bg" id="skill">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="title-small">
+				<div class="headstyle">
+                  <span style="font-size:140%">Software Skills</span>
+				  </div>
+                </h3>
+				<div class="divn">
+                <p class="content-detail">
+                  Being regular at coding, I've developed skill in few of the software technologies.
+                </p>
+				</div>
+              </div>
+              <div class="col-md-9 content-right">
+                <!--SKILLST-->
+				<div class="softw">
+                <div class="skillst">
+                  <div class="skillbar" data-percent="100%">
+                    <div class="title head-sm" style="font-size: 25px">
+                      HTML 5
+                    </div>
+                    <div class="count-bar">
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="100%">
+                      <div class="title head-sm" style="font-size: 25px">
+                      CSS 
+                    </div>
+                    <div class="count-bar">
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="100%">
+                     <div class="title head-sm" style="font-size: 25px">
+                      JAVA and PYTHON
+                    </div>
+                    <div class="count-bar">
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="100%">
+                      <div class="title head-sm" style="font-size: 25px">
+                      PHP
+                    </div>
+                    <div class="count-bar">
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                  <div class="skillbar" data-percent="95%">
+                     <div class="title head-sm" style="font-size: 25px">
+                      C Language
+                    </div>
+                    <div class="count-bar">
+                      <div class="count"></div>
+                    </div>
+                  </div>
+                </div>
+				</div>
+                <!--/.SKILLST END-->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/.SKILLS END-->
+
+        <!--EDUCATION-->
+        <section class="grey-bg" id="education">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="title-small">
+				<div class="headstyle">
+                  <span style="font-size:140%">Education</span>
+				  </div>
+                </h3>
+               
+              </div>
+              <div class="col-md-9 content-right">
+                <div class="row">
+                  <ul class="listing-item">
+                    <li>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="wrap-card">
+                          <div class="card">
+                            <h2 class="year">
+                              2015 - 2019(EXPECTED COMPLETION)
+                            </h2>
+                            <p class="job">
+                              B.Tech in COMPUTER SCIENCE AND ENGINEERING
+                            </p>
+                            <p class="company">
+                              VISVESVARAYA NATIONAL INSTITUE OF TECHNOLOGY, NAGPUR
+                            </p>
+                            <hr>
+                            <div class="text-detail">
+                              <p>
+                                The course offers a gradutaion in Computer Science. VNIT Nagpur is on of the most reputed colleges of the country.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="wrap-card">
+                          <div class="card">
+                            <h2 class="year">
+                              2013 - 2015
+                            </h2>
+                            <p class="job">
+                              XI-XII (INTERMEDIATE)
+                            </p>
+                            <p class="company">
+                              VIJAYARATNA JUNIOR COLLEGE
+                            </p>
+                            <hr>
+                            <div class="text-detail">
+                              <p>
+                                Vijayaratna is the abode for students of IIT Ramaiah study circle. It is one of the oldest and most successful IIT coaching institue in state.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="listing-item">
+                    <li>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="wrap-card">
+                          <div class="card">
+                            <h2 class="year">
+                              2012 - 2013
+                            </h2>
+                            <p class="job">
+                              X (MATRICULATE) 
+                            </p>
+                            <p class="company">
+                              DR KKR's GOWTHAM CONCEPT SCHOOL
+                            </p>
+                            <hr>
+                            <div class="text-detail">
+                              <p>
+                                CBSE cirriculum along with coaching for national-level competetive exams. 
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                   
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/.EDUCATION END-->
+
+        <!--TESTIMONIAL-->
+        <section id="testimonial">
+          <div class="container">
+            <div class="row wrap-testimonial">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="owl-carousel">
+                  <div class="list-testimonial">
+                    <div class="content-testimonial">
+                      <h3 class="testi">
+                        “ Aditya is very hardworking and fun-loving person. He always makes the job seem easy and smooth. The best thing about him is the way
+							he balances both academics and extra-curriculars. "	</h3>
+                      <p class="people">
+                        U A Deshpande - H.O.D Computer Science and Engineering, VNIT 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-testimonial">
+                    <div class="content-testimonial">
+                      <h3 class="testi">
+                        “ In one word he is a multi-tasker. Not good for him always though, but till now, he has never put himself in trouble. 
+						It was a wonderful experience mentoring him. "</h3>
+                      <p class="people">
+                        Akshay Bhawsar - Student Mentor (CSE,  GRAD '17)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-testimonial">
+                    <div class="content-testimonial">
+                      <h3 class="testi">
+                        “ He's always been a curious kid. His approach and perspective towards things has always stunned me. "
+							</h3>
+                      <p class="people">
+                        Shrinivas N S - Father
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mask-testimonial"></div>
+        </section>
+        <!--/.TESTMONIAL END-->
+
+       
+
+        <!--CONTACT-->
+        <section id="contact" class="white-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="title-small">
+				<div class="headstyle">
+                  <span>Contact</span>
+				  </div>
+                </h3>
+				<div class="divn">
+                <p class="content-detail">
+                  Feel free to contact me for any queries. If you find my profile interesting or would like to suggest any changes, please write down below. </p>
+				</div>
+              </div>
+              <div class="col-md-9 content-right">
+                <form>
+                  <div class="group">
+                    <input required="" type="text"><span class="highlight"></span><span class="bar"></span><label style="align :center;">Name</label>
+                  </div>
+                  <div class="group">
+                    <input required="" type="email"><span class="highlight"></span><span class="bar"></span><label>Email</label>
+                  </div>
+                  <div class="group">
+                    <textarea required=""></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
+                  </div>
+                  <input id="sendMessage" name="sendMessage" type="submit" value="Send Message">
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/.CONTACT END-->
+        
+        <!--FOOTER-->
+        <footer>
+          <div class="footer-top">
+            <ul class="socials">
+              <li class="facebook">
+                <a href="https://www.facebook.com/saiadityas" data-hover="Facebook">Facebook</a>
+              </li>
+              <li class="twitter">
+                <a href="https://twitter.com/" data-hover="Twitter">Twitter</a>
+              </li>
+              <li class="gplus">
+                <a href="https://plus.google.com/" data-hover="Google +">Google +</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+               &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp 
+               &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp 
+			   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp 
+               &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   &nbsp &nbsp&nbsp 
+			   <img src="images/logo-bottom.png" alt="logo bottom" class="center-block" align="middle" />
+				 <p align="middle" class="copyright">Copyright 2017. All rights reserved by Mr. Sai Aditya Sandupatla.	</p>
+                   
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--/.FOOTER-END-->
+
+      <!--/.CONTENT END-->
+      </div>
+    <!--/.CONTENT-WRAP END-->
+    </div>
+    
+
+  </body>
+</html>
